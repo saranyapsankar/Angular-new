@@ -1,0 +1,9 @@
+@import '../../shared/styles/form-styles';
+
+.login-modal {
+    @extend .modal;
+  }
+  
+.login-content {
+   @extend .modal-content;
+  }

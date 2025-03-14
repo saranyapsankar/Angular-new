@@ -1,0 +1,9 @@
+@import '../../shared/styles/form-styles';
+
+.sign-up-modal {
+  @extend .modal;
+}
+
+.sign-up-content {
+  @extend .modal-content;
+}

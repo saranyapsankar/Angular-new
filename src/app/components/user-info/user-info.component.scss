@@ -1,0 +1,34 @@
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .avatar img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .details h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .details p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .details i {
+    margin-right: 10px;
+    color: #00aaff;
+  }

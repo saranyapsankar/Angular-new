@@ -1,0 +1,27 @@
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../../../assets/landing-bg.avif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  .card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 400px;
+  }
+  
+  h1 {
+    color: #00aaff;
+  }
+  
+  .form-container {
+    margin-top: 20px;
+  }
+  
