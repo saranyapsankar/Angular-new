@@ -17,9 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": {
-              "base": "dist/angular-energy-app"
-            },
+            "outputPath": "dist/angular-energy-app",
             "index": "src/index.html",
             "polyfills": [
               "src/polyfills.ts"
