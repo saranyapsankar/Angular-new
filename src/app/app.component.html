@@ -1,3 +1,5 @@
-<app-navbar *ngIf="authService.getAuthStatus()"></app-navbar>
+@if(authService.getAuthStatus()){
+    <app-navbar></app-navbar>
+}
 <router-outlet></router-outlet>
 
