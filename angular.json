@@ -37,6 +37,7 @@
               "src/basscss.scss"
             ],
             "scripts": [],
+            "baseHref": "/angular-energy-app/",
             "browser": "src/main.ts"
           },
           "configurations": {
