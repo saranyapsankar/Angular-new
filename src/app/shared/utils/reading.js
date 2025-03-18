@@ -1,9 +1,10 @@
-export const getReadings = async (length = 1200) => {
+export const getReadings = async (deviceKey, length = 1200) => {
   const current = Date.now();
   const hour = 1000 * 60 * 60;
   return [...new Array(length)].map((_, index) => ({
     time: current - index * hour,
     value: Math.random() * 0.7 + 0.4,
+    deviceKey: deviceKey || `device-${Math.floor(Math.random() * 10)}` // Assign a random device key if not provided
   }));
 };
 

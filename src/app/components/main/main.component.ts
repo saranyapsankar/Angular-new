@@ -10,6 +10,8 @@ import { groupByDay, sortByTime, getReadings } from "../../shared/utils/reading"
 })
 export class MainComponent implements OnInit {
   chartData: Data[] = [];
+  energyConsumptionMap = new Map<string, string>([['⚡️ 1.4kW','Power draw'],['☀️️ 5.8kW','Solar power production'],['🔌️ 4.4kW','Fed into grid']]);
+
   constructor() { 
     this.createChart();
   }
@@ -18,11 +20,19 @@ export class MainComponent implements OnInit {
      
   }
 
-  async createChart() {
-    const readings = await getReadings();
+
+  async createChart(deviceKey?: string) {
+    const readings = await getReadings(deviceKey);
     const containerId = "chart";
     this.chartData = readings;
     renderChart(containerId, sortByTime(groupByDay(readings)).slice(-30));
   }
 
+  onDeviceSelected(deviceKey: string) {
+    this.createChart(deviceKey);
+  }
+
+  asIsOrder(a, b) {
+    return 1;
+  }
 }

@@ -32,11 +32,11 @@ export const renderChart = (containerId, readings) => {
         label: "kWh usage",
         data: values,
         fill: true,
-        borderColor: "rgb(75, 192, 192)",
-        tension: 0.1,
-        borderWidth: 0.2,
-        backgroundColor: "#5A8EDA",
-        borderRadius: 10,
+        tension: 0.8,
+        borderRadius: 5,
+        backgroundColor: 'rgba(16, 138, 69, 0.8)', // Change to green color
+        borderColor: 'rgba(9, 53, 10, 0.69)', // Change to green color
+        borderWidth: 0.7,
       },
     ],
   };
